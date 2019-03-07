@@ -51,7 +51,7 @@ export default class Home extends React.Component {
     return (
       <div className="window">
         <header className="toolbar toolbar-header">
-          <h1 className="title">Folder tree sample</h1>
+          <h1 className="title">Directory tree sample</h1>
           <div className="toolbar-actions">
             <button
               className="btn btn-primary"
@@ -59,7 +59,9 @@ export default class Home extends React.Component {
             >
               Choose folder
             </button>
-            <span>{this.state.activePath}</span>
+            <span className="">
+            Base : <span>{this.state.activePath}</span>
+            </span>
           </div>
         </header>
         <div className="window-content">
